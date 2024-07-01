@@ -1,3 +1,8 @@
+/* Referral Styling */
+.referr_btn{
+  padding-bottom: 30px !important;
+}
+
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -60,8 +65,7 @@ section h3.section-subheading {
 }
 
 .map_image {
-  width:75%;
-  height:100%;
+  width: 100%;
 }
 
 @media (max-width: 768px){
@@ -175,10 +179,12 @@ img::-moz-selection {
   }
 }
 
+/* Masthead CSS */
+
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("https://advanced-healthcare-llc-web-images.s3.us-east-2.amazonaws.com/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -228,6 +234,12 @@ header.masthead .intro-text .intro-heading {
     margin-bottom: 50px;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
+}
+
+/* About Masthead CSS */
+
+header.aboutmast{
+  background-image: url("https://advanced-healthcare-llc-web-images.s3.us-east-2.amazonaws.com/about_cover.png");
 }
 
 .service-heading {
@@ -615,7 +627,7 @@ section#focus {
 }
 
 section#coverage {
-  background-color: #002947;
+  background-color: #003C66;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -713,4 +725,26 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #003D68;
+}
+
+/* Coverage Map CSS */
+
+.coverage-list ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.coverage-list ul li {
+  display: inline-block;
+  background-color: #007BFF; /* Change this to your preferred button color */
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px; /* This makes the button rounded */
+  text-align: center; /* This centers the text in the button */
+}
+
+.coverage-list ul li:hover {
+  background-color: #0056b3; /* Change this to your preferred hover color */
 }
