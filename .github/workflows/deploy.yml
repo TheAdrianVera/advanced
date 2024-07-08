@@ -3,7 +3,7 @@ name: Deploy Advanced Site to GoDaddy
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
     deploy:
@@ -42,7 +42,7 @@ jobs:
                 key: ${{ secrets.GODADDY_SSH_KEY }}
                 port: 22
                 source: "."
-                target: "~/public_html"
+                target: "~/public_html/advancedhealthcareservices.org/"
 
             - name: SSH to GoDaddy
               uses: appleboy/ssh-action@master
@@ -52,7 +52,7 @@ jobs:
                 key: ${{ secrets.GODADDY_SSH_KEY }}
                 port: 22
                 script: |
-                  cd ~/public_html
+                  cd ~/public_html/advancedhealthcareservices.org/
                 #   php artisan migrate --force
                 #   php artisan config:cache
                 #   php artisan route:cache
