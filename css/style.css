@@ -748,3 +748,11 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .coverage-list ul li:hover {
   background-color: #0056b3; /* Change this to your preferred hover color */
 }
+
+#culture {
+  padding-bottom: 0px
+}
+
+.open-position-button {
+  margin-top: 2rem;
+}
